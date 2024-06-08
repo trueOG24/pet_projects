@@ -1,1 +1,75 @@
+Суть проекта. Описание данных. Этапы работы
 
+Для исследования были представлены данные о пользователях, в том числе их гендере, регионе проживания, дате регистрации, подписке. 
+Так же имеющиеся данные содержат информацию об их пожертвованиях фонду, дате, стоимости и названии продукта. 
+Помимо этого получена информация о пользователях, сотрудничающих с фондом уже длительное время, а так же данные о каналах привлечения пользователей.
+
+Цель исследования:
+Определить портрет пользователя в целом. Выявить особенности поведения исторических пользователей и новых отдельно. Рассчитать пользовательские, 
+маркетинговые и коммерческие метрики. Провести RFM-анализ и описать полученные сегменты. Определить эффективность каналов привлечения пользователей. 
+Дать общие выводы и практические рекомендации опираясь на результаты анализа.
+
+Описание данных:
+Файл donor_id.csv (информация о донорах):
+
+CustomerCustomFieldsRecurrent	- рекуррент да / нет;
+CustomerCustomFieldsVolunteer	- волонтер да / нет;
+CustomerSex	- пол пользователя;
+CustomerAreaIdsExternalId -	идентификатор региона пользователя;
+CustomerAreaName -	название региона пользователя;
+CustomerIanaTimeZone -	часовой пояс пользователя;
+CustomerTimeZoneSource -	источник данных о часовом поясе;
+CustomerIdsMindboxId -	идентификатор пользователя;
+CustomerIsEmailInvalid - почта невалидна да / нет;
+CustomerChangeDateTimeUtc -	дата регистрации / редактирования;
+CustomerCustomerSubscriptions DobroaifIsSubscribed -	подписка;
+CustomerCustomerSubscriptions DobroaifSmsIsSubscribed -	подписка в точке контакта SMS;
+CustomerCustomerSubscriptions DobroaifEmailIsSubscribed -	подписка в точке контакта email;
+CustomerCustomerSubscriptions DobroaifViberIsSubscribed	- подписка в точке контакта Viber;
+CustomerCustomerSubscriptions;
+CustomerCustomerDobroaifMobilePushIsSubscribed - подписка в точке контакта Mobile Push;
+CustomerCustomerSubscriptions;
+CustomerCustomerDobroaifWebPushIsSubscribed -	подписка в точке контакта Web Push
+
+Файл order.csv (информация о пожертвованиях):
+OrderIdsMindboxId - идентификатор платежа;
+OrderFirstActionIdsMindboxId - идентификатор действия;
+OrderFirstActionDateTimeUtc -	дата и время оформления заказа;
+OrderFirstActionChannelIdsMindboxId -	идентификатор точки контакта;
+OrderFirstActionChannelIdsExternalId - внешний идентификатор точки контакта;
+OrderFirstActionChannelName -	наименование точки контакта;
+OrderAreaIdsExternalId - идентификатор региона пользователя;
+OrderTransactionIdsExternalId - внешний идентификатор транзакции;
+OrderTotalPrice -	стоимость заказа;
+OrderIdsWebsiteID - идентификатор заказа на сайте;
+OrderCustomFieldsNewyear - наличие поля с новым годом;
+OrderCustomFieldsNextPayDate - дата следующего списания денег;
+OrderCustomFieldsRecurrent - рекурент да / нет;
+OrderCustomFieldsRepayment - повторный платеж;
+OrderLineProductIdsWebsite - идентификатор продукта на сайте;
+OrderLineProductName - название продукта;
+OrderLineQuantity -	количество единиц продукта;
+OrderLineBasePricePerItem -	базовая цена за единицу продукта;
+OrderLinePriceOfLine - итоговая цена;
+OrderLineStatusIdsExternalId - идентификатор статуса позиции заказа;
+OrderCustomerIdsMindboxId -	идентификатор пользователя;
+
+Файл import.csv (информация об историческом импорте):
+CustomerActionCustomerIdsMindboxId - идентификатор пользователя
+
+Файл channels.pkl (информация о каналах привлечения):
+User_action	- название действия пользователя;
+Action_date	- дата действия пользователя;
+Channel_id	- идентификатор канала (описание в текстовом файле);
+Utm_campaign	- кампания;
+Utm_source	- ресурс;
+Utm_medium	- что-то дублирующееся;
+User_id	- идентификатор пользователя;
+Action_time	- час действия пользователя;
+
+Этапы анализа:
+загрузка данных;
+предобработка данных. Подготовка к анализу;
+исследовательский анализ;
+аналитический блок;
+основные выводы
