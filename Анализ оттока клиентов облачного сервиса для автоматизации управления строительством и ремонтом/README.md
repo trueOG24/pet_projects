@@ -52,13 +52,21 @@ comment - комментарии;
 <li>
 pay_date - дата платежа;
 
-Файл companies.csv
+**Файл companies.csv:**
+
+<li>
 id - идентификатор компании;
+<li>
 working_direction - сфера деятельности компании;
+<li>
 employer_count_interval - идентификатор количества сотрудников в компании;
+<li>
 created_at - дата создания компании в системе;
+<li>
 updated_at - дата обновления информации;
+<li>
 billing_tariff_id - идентификатор тарифа;
+<li>
 billing_is_over - истекла ли олата
 
 **Файл people.csv:**
